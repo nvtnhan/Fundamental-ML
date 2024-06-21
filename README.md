@@ -14,6 +14,19 @@ This repository contains the code and data for a mini-project on facial expressi
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
+## 📝 Result
+| Algorithms | Data | Macro Avg. Precision | Weighted Avg. Precision | Macro Avg. Recall | Weighted Avg. Recall | Macro Avg. F1-score | Weighted Avg. F1-score | Accuracy |
+|---|---|---|---|---|---|---|---|---|
+| Logistic Regression | Original | 0.32 | 0.35 | 0.31 | 0.38 | 0.30 | 0.36 | 0.38 |
+| Logistic Regression | PCA transformed | 0.31 | 0.34 | 0.29 | 0.38 | 0.28 | 0.34 | 0.38 |
+| Naive Bayes | Original | 0.22 | 0.27 | 0.22 | 0.21 | 0.17 | 0.19 | 0.21 |
+| Naive Bayes | PCA transformed | 0.31 | 0.33 | 0.27 | 0.34 | 0.25 | 0.29 | 0.34 |
+| Random Forest | Original | 0.56 | 0.49 | 0.42 | 0.48 | 0.44 | 0.46 | 0.48 |
+| Random Forest | PCA transformed | 0.56 | 0.49 | 0.42 | 0.48 | 0.44 | 0.46 | 0.48 |
+| MLP | Original | 0.38 | 0.41 | 0.38 | 0.41 | 0.38 | 0.41 | 0.41 |
+| MLP | PCA transformed | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 |
+
+
 ## 📦 Project Structure
 
 The repository is organized into the following directories:
