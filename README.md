@@ -15,6 +15,9 @@ This repository contains the code and data for a mini-project on facial expressi
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
 ## 📝 Result
+
+![Acuracy plot](./materials/Accuracy.png)
+
 | Algorithms | Data | Macro Avg. Precision | Weighted Avg. Precision | Macro Avg. Recall | Weighted Avg. Recall | Macro Avg. F1-score | Weighted Avg. F1-score | Accuracy |
 |---|---|---|---|---|---|---|---|---|
 | Logistic Regression | Original | 0.32 | 0.35 | 0.31 | 0.38 | 0.30 | 0.36 | 0.38 |
