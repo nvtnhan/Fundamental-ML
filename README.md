@@ -27,7 +27,7 @@ This repository contains the code and data for a mini-project on facial expressi
 | Random Forest | Original | 0.56 | 0.49 | 0.42 | 0.48 | 0.44 | 0.46 | 0.48 |
 | Random Forest | PCA-transformed | 0.56 | 0.49 | 0.42 | 0.48 | 0.44 | 0.46 | 0.48 |
 | MLP | Original | 0.38 | 0.41 | 0.38 | 0.41 | 0.38 | 0.41 | 0.41 |
-| MLP | PCA-transformed | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 |
+| MLP | PCA-transformed | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 | 0.39 | 0.39 |
 
 ## 📑 General Observations on PCA's Impact on Model Performance
 
