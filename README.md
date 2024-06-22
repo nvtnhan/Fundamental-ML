@@ -26,6 +26,43 @@ This repository contains the code and data for a mini-project on facial expressi
 | MLP | Original | 0.38 | 0.41 | 0.38 | 0.41 | 0.38 | 0.41 | 0.41 |
 | MLP | PCA transformed | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 | 0.39 | 0.41 |
 
+## 📑 General Observations on PCA's Impact on Model Performance
+
+From the results of the models trained on the Original data and PCA-transformed data, we can make the following general observations about the effect of PCA on model performance:
+
+- Logistic Regression: Dimensionality reduction using PCA does not significantly change the overall performance of the model, while helping to reduce model training time. However, it can reduce the model's performance for certain classes.
+- Naive Bayes: The model trained with PCA data shows improved accuracy, precision, recall, and F1-score, indicating better performance after dimensionality reduction.
+- Random Forest: The model's performance does not change when using PCA. This indicates that the principal components have retained sufficient information for the model to perform equivalently to using the original data. This typically occurs when the original data has many redundant dimensions, and PCA can remove less informative dimensions without affecting the model's performance.
+- MLP: The model trained on the original data performs slightly better than the model trained on PCA data. The performance difference between the two models is insignificant. Dimensionality reduction using PCA does not significantly reduce the model's performance; however, in this case, it helps reduce model training time.
+
+## 📝 Classification Performance
+
+Based on models' results with PCA transformed data, we obtain:
+
+**Model Performance Analysis**
+
+* **Random Forest:** Clearly emerges as the best-performing model based on all metrics except for macro-averaged precision. Its accuracy (0.48) is notably higher than other models. It also strikes a good balance between precision and recall, as evidenced by its F1-scores.
+
+* **MLP:** Performs reasonably well, particularly on the macro-averaged metrics. This suggests it's less biased towards the majority class compared to other models.
+
+* **Logistic Regression and Naive Bayes:** Both models struggle with the task, exhibiting lower accuracy and generally weaker performance across other metrics.
+
+**Emotion Category Performance**
+
+Let's focus on the Random Forest model (the best performer) and analyze its strengths and weaknesses per emotion category:
+
+* **Most Accurate:**
+Category 3 (Happiness): The model achieves the highest recall (0.79) and F1-score (0.60), indicating it's very good at correctly identifying instances of happiness and not missing many true positive cases.
+* **Most Errors:**
+Category 0 (Angry) and Category 2 (Fear): The model exhibits the lowest precision and recall values for these emotions. This means it struggles to distinguish these emotions from others and often misclassifies them.
+
+**Why Random Forest Performs Best**
+
+Random Forest models are inherently good at handling complex classification tasks due to several reasons:
+
+* **Ensemble Learning:** They combine the predictions of multiple decision trees, reducing overfitting and improving generalization.
+* **Feature Importance:** They can identify the most important features for classification, potentially revealing insights about the data.
+* **Robustness to Noise:** They are less sensitive to outliers and noisy data compared to some other algorithms.
 
 ## 📦 Project Structure
 
