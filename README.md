@@ -33,10 +33,10 @@ This repository contains the code and data for a mini-project on facial expressi
 
 From the results of the models trained on the Original data and PCA-transformed data, we can make the following general observations about the effect of PCA on model performance:
 
-- Logistic Regression: Dimensionality reduction using PCA does not significantly change the overall performance of the model, while helping to reduce model training time. However, it can reduce the model's performance for certain classes.
-- Naive Bayes: The model trained with PCA data shows improved accuracy, precision, recall, and F1-score, indicating better performance after dimensionality reduction.
-- Random Forest: The model's performance does not change when using PCA. This indicates that the principal components have retained sufficient information for the model to perform equivalently to using the original data. This typically occurs when the original data has many redundant dimensions, and PCA can remove less informative dimensions without affecting the model's performance.
-- MLP: The model trained on the original data performs slightly better than the model trained on PCA data. The performance difference between the two models is insignificant. Dimensionality reduction using PCA does not significantly reduce the model's performance; however, in this case, it helps reduce model training time.
+- **Logistic Regression:** Dimensionality reduction using PCA does not significantly change the overall performance of the model, while helping to reduce model training time. However, it can reduce the model's performance for certain classes.
+- **Naive Bayes:** The model trained with PCA data shows improved accuracy, precision, recall, and F1-score, indicating better performance after dimensionality reduction.
+- **Random Forest:** The model's performance does not change when using PCA. This indicates that the principal components have retained sufficient information for the model to perform equivalently to using the original data. This typically occurs when the original data has many redundant dimensions, and PCA can remove less informative dimensions without affecting the model's performance.
+- **MLP:** The model trained on the original data performs slightly better than the model trained on PCA data. The performance difference between the two models is insignificant. Dimensionality reduction using PCA does not significantly reduce the model's performance; however, in this case, it helps reduce model training time.
 
 ## 📝 Classification Performance
 
