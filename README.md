@@ -14,7 +14,7 @@ This repository contains the code and data for a mini-project on facial expressi
 
 - The submission deadline is strict: **11:59 PM** on **June 22nd, 2024**. Commits pushed after this deadline will not be considered.
 
-## 📝 Result
+## 📊 Result
 
 ![Acuracy plot](./materials/Accuracy.png)
 
